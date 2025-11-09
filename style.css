@@ -1,0 +1,151 @@
+/* Research project and skill button styles */
+.research-project {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 1rem 0 1.25rem 0;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.research-project h3 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.1rem;
+}
+
+.research-project p {
+  margin: 0 0 0.6rem 0;
+  color: #444;
+  line-height: 1.4;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.skill-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  background: #f3f4f6;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: #111827;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.85rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 120ms ease, transform 90ms ease;
+}
+
+.skill-btn:hover {
+  background: #e6e9ee;
+}
+
+.skill-btn:active {
+  transform: translateY(1px);
+}
+
+.skill-btn:focus-visible {
+  outline: 3px solid rgba(59, 130, 246, 0.35);
+  outline-offset: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .research-project {
+    border-color: rgba(255, 255, 255, 0.04);
+  }
+  .research-project p {
+    color: #d1d5db;
+  }
+  .skill-btn {
+    background: #111827;
+    color: #e5e7eb;
+    border-color: rgba(255, 255, 255, 0.06);
+  }
+  .skill-btn:hover {
+    background: #0b1220;
+  }
+}
+
+/* Small helper for grid container (keeps spacing consistent) */
+.grid#researchGrid {
+  margin-top: 1rem;
+}
+
+/* Thumbnail and figure styles */
+.project-figure {
+  margin: 0;
+  width: 96px;
+  height: 96px;
+  overflow: hidden;
+  border-radius: 8px;
+  display: block;
+}
+
+.project-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-body {
+  min-width: 0; /* allow text truncation in grid */
+}
+
+/* Project link styles */
+.project-links {
+  margin-top: 0.35rem;
+}
+
+.repo-link {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: transparent;
+  color: inherit;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background-color 120ms ease, transform 90ms ease;
+}
+
+.repo-link:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+@media (prefers-color-scheme: dark) {
+  .repo-link {
+    border-color: rgba(255, 255, 255, 0.06);
+  }
+  .repo-link:hover {
+    background: rgba(255, 255, 255, 0.02);
+  }
+}
+
+/* Accessible visually-hidden helper */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+@media (max-width: 560px) {
+  .research-project {
+    grid-template-columns: 1fr;
+  }
+  .project-figure {
+    width: 100%;
+    height: 160px;
+    border-radius: 6px;
+  }
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aayush Katoch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="#top">
+          <span class="logo" aria-hidden="true"></span>
+          <span> Aayush Katoch </span>
+        </a>
+        <div class="nav-links">
+          <a href="#projects">Projects</a>
+          <a href="#research">Research</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+          <button
+            id="themeToggle"
+            class="btn btn-ghost"
+            aria-pressed="false"
+            aria-label="Toggle theme"
+          >
+            🌓
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="top" class="container">
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <span class="badge">Machine Learning | AI | GenAI • Portfolio</span>
+            <h1>
+              Hi, I'm
+              <span class="gradient-text">Aayush Katoch</span>. I build data
+              driven products and publish applied ML/AI research.
+            </h1>
+            <p class="subtitle">
+              Data Scientist specializing machine learning and deep learning
+              research. Proven success developing advanced Deep Learning
+              (PyTorch/TensorFlow) algorithms during Research Internships with
+              ISRO on satellite image analysis and DRDO. Proficient in Python,
+              statistical analysis, and modeling frameworks, delivering robust
+              solutions in computer vision and multimodal language models.
+            </p>
+            <div class="hero-cta">
+              <a class="btn" href="#projects">View Projects</a>
+              <a class="btn btn-ghost" href="#contact">Get in touch</a>
+            </div>
+          </div>
+          <div class="headshot" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects">
+        <div class="section-head">
+          <h2 class="section-title">Projects</h2>
+          <div class="filters" role="toolbar" aria-label="Project filters">
+            <button class="filter-btn" data-filter="all" aria-pressed="true">
+              All
+            </button>
+            <button class="filter-btn" data-filter="ml">ML</button>
+            <button class="filter-btn" data-filter="app">Apps</button>
+            <button class="filter-btn" data-filter="cv">CV</button>
+            <button class="filter-btn" data-filter="nlp">NLP</button>
+            <button class="filter-btn" data-filter="mle">MLOps</button>
+          </div>
+        </div>
+        <div id="projectGrid" class="grid" aria-live="polite"></div>
+      </section>
+
+      <!-- RESEARCH SECTION -->
+      <section id="research">
+        <h2>Research Projects / Publications</h2>
+
+        <div class="research-project">
+          <figure class="project-figure">
+            <img
+              src="Images/img1.png"
+              alt="Validation project: sample result of transfer learning on medical images"
+              class="project-thumb"
+            />
+            <figcaption class="sr-only">
+              Validation of Transfer Learning for Low-Resource Medical Imaging —
+              thumbnail
+            </figcaption>
+          </figure>
+
+          <div class="project-body">
+            <h3>
+              Validation of Transfer Learning for Low-Resource Medical Imaging
+            </h3>
+            <p>
+              Brief summary of goals, dataset, and results (e.g. improved
+              accuracy using transfer learning on limited labelled data).
+            </p>
+            <div class="project-details">
+              <a
+                class="repo-link"
+                href="https://github.com/Aayush99000/Low-Medical-Imaging"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open project repository on GitHub"
+                >Github-repo</a
+              >
+            </div>
+            <div class="skills-list" aria-label="Technologies used">
+              <button type="button" class="skill-btn" aria-pressed="false">
+                PyTorch
+              </button>
+              <button type="button" class="skill-btn" aria-pressed="false">
+                Transfer Learning
+              </button>
+              <button type="button" class="skill-btn" aria-pressed="false">
+                CNN
+              </button>
+              <button type="button" class="skill-btn" aria-pressed="false">
+                Medical Imaging
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="research-project">
+          <figure class="project-figure">
+            <img
+              src="Images/img2.png"
+              alt="Captioning project: sample satellite image with generated caption"
+              class="project-thumb"
+            />
+            <figcaption class="sr-only">
+              Captioning of Satellite Images — thumbnail
+            </figcaption>
+          </figure>
+
+          <div class="project-body">
+            <h3>
+              Captioning of Satellite Images using Transfer Learning and LSTM
+              Blending
+            </h3>
+            <p>
+              Project description goes here... Short summary of dataset and the
+              encoder-decoder approach used for generating captions for
+              satellite imagery.
+            </p>
+            <div class="project-details">
+              <!-- Additional details like links, dates, technologies used -->
+            </div>
+            <div class="project-links">
+              <a
+                class="repo-link"
+                href="https://link.springer.com/chapter/10.1007/978-3-031-70789-6_41"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open Paper link on Springer"
+                >View publication</a
+              >
+            </div>
+            <div class="skills-list" aria-label="Technologies used">
+              <button type="button" class="skill-btn" aria-pressed="false">
+                Vision Models
+              </button>
+              <button type="button" class="skill-btn" aria-pressed="false">
+                LSTM
+              </button>
+              <button type="button" class="skill-btn" aria-pressed="false">
+                PyTorch
+              </button>
+              <button type="button" class="skill-btn" aria-pressed="false">
+                Data Augmentation
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="research-project">
+          <figure class="project-figure">
+            <img
+              src="Images/img3.jpg"
+              alt="Cloud detection project: example segmentation output"
+              class="project-thumb"
+            />
+            <figcaption class="sr-only">
+              Enhancing Cloud Detection Performance — thumbnail
+            </figcaption>
+          </figure>
+
+          <div class="project-body">
+            <h3>
+              Enhancing Cloud Detection Performance: Comparative Study of CNN
+              Models
+            </h3>
+            <p>
+              Project description goes here... Summary of experiments comparing
+              architectures for cloud segmentation and performance trade-offs.
+            </p>
+            <div class="project-details">
+              <!-- Additional details like links, dates, technologies used -->
+            </div>
+            <div class="project-links">
+              <a
+                class="repo-link"
+                href="https://ieeexplore.ieee.org/document/10652552"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open paper link on IEEE Xplore"
+                >View Publication</a
+              >
+            </div>
+            <div class="skills-list" aria-label="Technologies used">
+              <button type="button" class="skill-btn" aria-pressed="false">
+                U-Net
+              </button>
+              <button type="button" class="skill-btn" aria-pressed="false">
+                Transfer Learning
+              </button>
+              <button type="button" class="skill-btn" aria-pressed="false">
+                PyTorch
+              </button>
+              <button type="button" class="skill-btn" aria-pressed="false">
+                Segmentation
+              </button>
+              <button type="button" class="skill-btn" aria-pressed="false">
+                TensorFlow
+              </button>
+              <button type="button" class="skill-btn" aria-pressed="false">
+                Satellite Imagery
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="research-project">
+          <figure class="project-figure">
+            <img
+              src="Images/img4.png"
+              alt="Army vehicle detection: sample bounding boxes from YOLO"
+              class="project-thumb"
+            />
+            <figcaption class="sr-only">
+              Army Vehicle Detection — thumbnail
+            </figcaption>
+          </figure>
+
+          <div class="project-body">
+            <h3>Army Vehicle Detection using YOLO-v7, YOLO-v8 and YOLO-v9</h3>
+            <p>
+              Project description goes here... Brief overview of dataset,
+              annotation strategy, and comparison across YOLO generations.
+            </p>
+            <div class="project-details">
+              <!-- Additional details like links, dates, technologies used -->
+            </div>
+            <div class="project-links">
+              <a
+                class="repo-link"
+                href="https://github.com/Aayush99000/yolo-vehicle-detection"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open YOLO Vehicle Detection repository on GitHub"
+                >View repo</a
+              >
+            </div>
+            <div class="skills-list" aria-label="Technologies used">
+              <button type="button" class="skill-btn" aria-pressed="false">
+                YOLO
+              </button>
+              <button type="button" class="skill-btn" aria-pressed="false">
+                Object Detection
+              </button>
+              <button type="button" class="skill-btn" aria-pressed="false">
+                Python
+              </button>
+              <button type="button" class="skill-btn" aria-pressed="false">
+                Augmentation
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div id="researchGrid" class="grid"></div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <!-- <section id="skills">
+        <div class="section-head">
+          <h2 class="section-title">Skills</h2>
+          <p class="muted">
+            • Tools & Methodologies: Eclipse, Ms Visual Studio code, Spring,
+            GIS, Git, Github, Flask, NetBeans, Agile Development, FastAPI </p>
+          <p>• Programming Languages: Python, R, Java, SQL, C, C++, C#, HTML,
+            CSS, javascript </p> <p>• Machine Learning And Ai: Supervised and
+            Unsupervised Learning, Neural Networks, CNNs, RNNs, Scikit-learn,
+            Numpy, Pandas, Seaborn, TensorFlow, PyTorch, Keras, NLP, Transformer
+            Models, LLMs, LangChain, GPT, Prompt Engineering, OpenCV, RAG, AI
+            agent, Llama, Machine Learning Models </p><p>• Cloud Computing: AWS, Google
+            Cloud, Azure, Docker, Kubernetes </p>
+          </p>
+        </div>
+        <div class="skills" id="skillsChips"></div>
+      </section> -->
+
+      <!-- CONTACT SECTION -->
+      <section id="contact">
+        <div class="section-head">
+          <h2 class="section-title">Contact</h2>
+          <p class="muted">
+            I'm open to internships, research collaborations, and freelance ML
+            projects.
+          </p>
+        </div>
+        <div class="card">
+          <div class="row">
+            <div class="links">
+              <a
+                class="btn"
+                href="https://github.com/Aayush99000"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub</a
+              >
+              <a
+                class="btn"
+                href="https://www.linkedin.com/in/aayush-katoch-a4ggit 7413175/"
+                target="_blank"
+                rel="noreferrer"
+                >LinkedIn</a
+              >
+              <a class="btn" href="mailto:katoch.aa@northeatern.edu.com"
+                >Email</a
+              >
+              <a class="btn" href="/Resume.pdf" target="_blank" rel="noreferrer"
+                >Resume</a
+              >
+            </div>
+            <a class="btn btn-ghost" href="#top">Back to top ↑</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container">
+      © <span id="year"></span> Your Name. Built with vanilla HTML/CSS/JS.
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="main.js"></script>
+  </body>
+</html>
